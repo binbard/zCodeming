@@ -1,0 +1,81 @@
+/* 2021 - @uti1man
+
+Sublime Text - Build config file for programmers
+Includes support for C, Java, Python
+
+CONFIG : Make sure you edit the working_dir variable declared just below
+or create a folder as D:\\doe\\dev\\code\\build
+
+CONFIG : You may want to setup a system for taking input from file1 and output to file2
+For this, Go to: View>Layout>Column2 & View>Groups>MaxColumns3;
+
+*/
+
+{ 
+  "working_dir" : "D:\\doe\\dev\\code\\build",                    //CONFIG
+  "selector": ["source.c"],
+  "shell": true,
+  "cmd": ["echo", "GOOD LUCK"],
+  "variants": [
+
+    {
+      "name": "ANSI C",
+      "cmd": ["gcc", "$file", "-o",
+              "a.exe", "&&", "start", "cmd", "/k",
+              "a.exe" ],
+    },
+
+    {
+      "name": "ANSI C - std file pipe",
+      "cmd": ["gcc", "$file", "-o",
+              "a.exe", "&&", "a.exe",
+              "<", "input.txt", ">", "output.txt" ],
+    },
+
+    // {
+    //   "working_dir" : "$file_path",
+    //   "name": "ANSI C - build in current dir",
+    //   "cmd": ["gcc", "$file_name", "-o", 
+    //            "a.exe",  "&&", "start", "cmd", "/k" , "a.exe" ],
+    // },
+
+    // {
+    //   "name": "Standard C",
+    //   "cmd": ["gcc", "-Wall", "-ansi", "-pedantic-errors", "$file", "-o", 
+    //            "a.exe", "&&", "start", "cmd", "/k", 
+    //            "a.exe"],
+    // },
+
+    // {
+    //   "name": "-------------------------",
+    //   "cmd": ["echo","GOOD LUCK"],
+    // },
+
+    {
+      "name": "Java",
+      "cmd": ["start", "cmd", "/k", 
+              "java", "$file" ],
+    },
+
+    // {
+    //   "name": "Java - std file pipe",
+    //   "cmd": ["java", "$file", "-o",
+    //           "a.exe", "&&", "a.exe",
+    //           "<", "input.txt", ">", "output.txt" ],
+    // },
+
+    {
+      "name": "Python3",
+      "cmd": ["start", "cmd", "/k", 
+              "python", "$file" ],
+    },
+
+    {
+      "name": "Javascript",
+      "cmd": ["start", "cmd", "/k", 
+              "node", "$file" ],
+    },
+
+
+  ]
+}
