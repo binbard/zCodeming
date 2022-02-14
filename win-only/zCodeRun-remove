@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+
+; C
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.c\shell\zCodeC]
+
+; Java
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.java\shell\zCodeJAVA]
+
+; Javascript
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.js\shell\zCodeJS]
+
+; Python
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.py\shell\zCodePY]
+
+; Batch
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.bat\shell\zCodeC]
+
+
