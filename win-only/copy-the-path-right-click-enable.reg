@@ -1,6 +1,6 @@
 Windows Registry Editor Version 5.00
 
-[HKEY_CLASSES_ROOT\Allfilesystemobjects\shell\windows.copythepath]
+[HKEY_CLASSES_ROOT\Allfilesystemobjects\shell\windows.copyfullpath]
 @="Copy full path"
 "Icon"="imageres.dll,-5302"
 "InvokeCommandOnSelection"=dword:00000001
