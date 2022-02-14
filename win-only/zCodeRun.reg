@@ -1,0 +1,45 @@
+Windows Registry Editor Version 5.00
+
+
+; C
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.c\shell\zCodeC]
+@="zCode Run C"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.c\shell\zCodeC\command]
+@="cmd /k gcc \"%1\ & a.exe"
+;@="cmd /k gcc \"%1\""
+;@="cmd /k gcc \"%1\" -o \"%temp%" & %temp%\\a.exe"
+
+
+; Java
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.java\shell\zCodeJAVA]
+@="zCode Run Java"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.java\shell\zCodeJAVA\command]
+@="cmd /k java \"%1\""
+
+
+; Javascript
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.js\shell\zCodeJS]
+@="zCode Run JS"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.js\shell\zCodeJS\command]
+@="cmd /k node \"%1\""
+
+
+; Python
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.py\shell\zCodePY]
+@="zCode Run py"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.py\shell\zCodePY\command]
+@="cmd /k python \"%1\""
+
+
+; Batch
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.bat\shell\zCodeC]
+@="zCode Run Bat"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.bat\shell\zCodeC\command]
+@="cmd /k \"%1\""
+
+
