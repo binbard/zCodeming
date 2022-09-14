@@ -12,7 +12,7 @@ For this, Go to: View>Layout>Column2 & View>Groups>MaxColumns3;
 */
 
 { 
-  "working_dir" : "D:\\doe\\dev\\code\\build",                    //CONFIG
+  "working_dir" : "D:\\doe\\code\\build",                    //CONFIG
   "selector": ["source.c"],
   "shell": true,
   "cmd": ["echo", "GOOD LUCK"],
@@ -63,6 +63,21 @@ For this, Go to: View>Layout>Column2 & View>Groups>MaxColumns3;
     //           "a.exe", "&&", "a.exe",
     //           "<", "input.txt", ">", "output.txt" ],
     // },
+
+
+    {
+      "name": "C++",
+      "cmd": ["g++", "$file", "-o",
+              "a.exe", "&&", "start", "cmd", "/k",
+              "a.exe" ],
+    },
+
+    {
+      "name": "C++ - std file pipe",
+      "cmd": ["g++", "$file", "-o",
+              "a.exe", "&&", "a.exe",
+              "<", "input.txt", ">", "output.txt" ],
+    },
 
     {
       "name": "Python3",
